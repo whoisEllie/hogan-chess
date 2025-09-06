@@ -22,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 34px 0 34px;
-  width: 100%;
 }
 
 .nav {
