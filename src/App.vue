@@ -2,23 +2,24 @@
   <div class="app">
     <Header />
     <HeroSection />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import HeroSection from "./components/HeroSection.vue";
-//import Footer from "./components/Footer.vue"
+import Header from './components/Header.vue'
+import HeroSection from './components/HeroSection.vue'
+import Footer from './components/Footer.vue'
 
 export default {
-  components: { Header, HeroSection },
-};
+  components: { Header, HeroSection, Footer },
+}
 </script>
 
 <style>
 body {
   margin: 0;
-  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
   background-color: var(--color-background);
 }
 </style>

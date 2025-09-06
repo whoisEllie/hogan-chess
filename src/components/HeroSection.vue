@@ -8,11 +8,10 @@
         <button class="login_or_register">Login or register</button>
       </div>
       <div class="hero_left_subtitle">
-        <div class="hero_left_subtitle_header">
-          It’s free.
-        </div>
+        <div class="hero_left_subtitle_header">It’s free.</div>
         <div>
-          Dive into the heart of chess with the FIDE Online Arena, the only online platform where chess aficionados can earn FIDE-recognized titles.
+          Dive into the heart of chess with the FIDE Online Arena, the only online platform where
+          chess aficionados can earn FIDE-recognized titles.
         </div>
       </div>
       <img class="pawn_image" src="../assets/pawn.png" />
@@ -21,7 +20,10 @@
     <!-- Right -->
     <div class="hero_right">
       <div class="hero_right_question">Why play Chessgame?</div>
-      <div class="hero_right_answer">Play rated games against opponents of your strength.<br/>Get more hints in beginner games.<br/>Store your games in the cloud.</div>
+      <div class="hero_right_answer">
+        Play rated games against opponents of your strength.<br />Get more hints in beginner
+        games.<br />Store your games in the cloud.
+      </div>
       <button class="login_or_register">Login or register</button>
     </div>
   </section>
@@ -111,5 +113,4 @@
   margin-right: auto;
   margin-top: 1rem;
 }
-
 </style>

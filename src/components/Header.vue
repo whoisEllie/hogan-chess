@@ -1,17 +1,20 @@
 <template>
   <header class="header">
     <div class="nav">
-        <a><img src="../assets/home.svg"/></a>
-        <a>Veřejné partie</a>
-        <a>Turnaje</a>
-        <a>Fórum</a>
-        <a>ELO</a>
+      <a><img src="../assets/home.svg" /></a>
+      <a>Veřejné partie</a>
+      <a>Turnaje</a>
+      <a>Fórum</a>
+      <a>ELO</a>
     </div>
-    <div class="logo"><img src="../assets/logo.png" height="50px"/></div>
+    <div class="logo"><img src="../assets/logo.png" height="50px" /></div>
     <div class="actions">
-      <button class="login"><img src="../assets/user.svg"/>Přihlášení</button>
-      <button class="notifications"><img src="../assets/notifications-unread.svg"/></button>
-      <button class="new-game"><div>+</div><div>Nová hra</div></button>
+      <button class="login"><img src="../assets/user.svg" />Přihlášení</button>
+      <button class="notifications"><img src="../assets/notifications-unread.svg" /></button>
+      <button class="new-game">
+        <div>+</div>
+        <div>Nová hra</div>
+      </button>
     </div>
   </header>
 </template>
@@ -57,7 +60,6 @@
   align-items: center;
   gap: 1rem;
   font-weight: bold;
-
 }
 
 .new-game {
@@ -66,5 +68,4 @@
   padding: 0.75rem;
   border-radius: 999px;
 }
-
 </style>
