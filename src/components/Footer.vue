@@ -10,21 +10,24 @@ export default {
   },
   computed: {
     getTime() {
-      let time = this.now.toLocaleTimeString(navigator.language, {hour: "2-digit", minute:
-        "2-digit", hour12: false});
-      console.log(time);
-      return time;
+      let time = this.now.toLocaleTimeString(navigator.language, {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+      })
+      console.log(time)
+      return time
     },
     getDay() {
-      return this.now.toLocaleDateString(navigator.language, {weekday: "long"});
+      return this.now.toLocaleDateString(navigator.language, { weekday: 'long' })
     },
     getDate() {
-      return this.now.toLocaleDateString(navigator.language);
+      return this.now.toLocaleDateString(navigator.language)
     },
     getCity() {
-      return "Čestmír"; //TODO: Geolocation implementation
-    }
-  }
+      return 'Čestmír' //TODO: Geolocation implementation
+    },
+  },
 }
 </script>
 
@@ -32,11 +35,11 @@ export default {
   <footer class="wrapper">
     <div class="clock-wrapper">
       <div class="digital-clock">
-        <div class="time">{{getTime}}</div>
+        <div class="time">{{ getTime }}</div>
         <div class="details">
-          <div>{{getDay}}</div>
-          <div>{{getDate}}</div>
-          <div style="color: #dfddd299">{{getCity}}</div>
+          <div>{{ getDay }}</div>
+          <div>{{ getDate }}</div>
+          <div style="color: #dfddd299">{{ getCity }}</div>
         </div>
       </div>
       <Clock class="analogue-clock" />
@@ -51,7 +54,6 @@ export default {
         </div>
       </div>
 
-
       <div class="footer-nav">
         <a>Moje partie</a>
         <a>Rozehrané partie</a>
@@ -62,7 +64,6 @@ export default {
           <div>Nová hra</div>
         </button>
       </div>
-
     </div>
   </footer>
 </template>
@@ -70,7 +71,7 @@ export default {
 <style scoped>
 .wrapper {
   width: calc(100vw - 69px);
-  position: absolute;
+  position: fixed;
   bottom: 34px;
   left: 50%;
   transform: translate(-50%, 0);
@@ -191,4 +192,34 @@ export default {
   border-radius: 999px;
 }
 
+@media (max-width: 1024px) {
+  .clock-wrapper {
+    display: none;
+  }
+
+  .footer-nav {
+    white-space: nowrap;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: calc(100vw - 20px);
+    bottom: 10px;
+  }
+  .user-card {
+    font-size: 1rem;
+    gap: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .user-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .new-game {
+  }
+}
 </style>

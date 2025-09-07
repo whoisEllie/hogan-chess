@@ -1,5 +1,4 @@
 <script>
-
 export default {
   name: 'Clock',
   data() {
@@ -10,13 +9,13 @@ export default {
   },
   computed: {
     secondDeg() {
-      return this.now.getSeconds() * 6;
+      return this.now.getSeconds() * 6
     },
     minuteDeg() {
-      return this.now.getMinutes() * 6 + this.now.getSeconds() * 0.1;
+      return this.now.getMinutes() * 6 + this.now.getSeconds() * 0.1
     },
     hourDeg() {
-      return (this.now.getHours() % 12) * 30 + this.now.getMinutes() * 0.5;
+      return (this.now.getHours() % 12) * 30 + this.now.getMinutes() * 0.5
     },
   },
   mounted() {
@@ -28,7 +27,6 @@ export default {
     clearInterval(this.timerId)
   },
 }
-
 </script>
 
 <template>

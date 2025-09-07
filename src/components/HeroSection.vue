@@ -36,6 +36,7 @@
   padding: 0 34px 0 34px;
   gap: 1rem;
   margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 
 .hero_left {
@@ -76,6 +77,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  max-width: 40%;
 }
 
 .hero_right {
@@ -112,5 +114,57 @@
   margin-left: 0;
   margin-right: auto;
   margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero_left,
+  .hero_right {
+    padding: 20px;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .hero_left_title {
+    font-size: 42px;
+  }
+
+  .hero_left_subtitle {
+    width: 100%;
+  }
+
+  .hero_right {
+    font-size: 22px;
+    line-height: 30px;
+    justify-content: flex-start;
+  }
+
+  .login_or_register {
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+
+  .pawn_image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero_left_title {
+    font-size: 32px;
+  }
+
+  .hero_right {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .login_or_register {
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+  }
 }
 </style>
